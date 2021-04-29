@@ -1,0 +1,10 @@
+D:\NCC4.0\NCCVDI_40_VMWARE_DEV\APITest\TestService\bin\Debug\TestService.exe.config
+D:\NCC4.0\NCCVDI_40_VMWARE_DEV\APITest\TestService\bin\Debug\TestService.exe
+D:\NCC4.0\NCCVDI_40_VMWARE_DEV\APITest\TestService\bin\Debug\TestService.pdb
+D:\NCC4.0\NCCVDI_40_VMWARE_DEV\APITest\TestService\obj\Debug\TestService.ProjectInstaller.resources
+D:\NCC4.0\NCCVDI_40_VMWARE_DEV\APITest\TestService\obj\Debug\TestService.Service1.resources
+D:\NCC4.0\NCCVDI_40_VMWARE_DEV\APITest\TestService\obj\Debug\TestService.csproj.GenerateResource.cache
+D:\NCC4.0\NCCVDI_40_VMWARE_DEV\APITest\TestService\obj\Debug\TestService.csproj.CoreCompileInputs.cache
+D:\NCC4.0\NCCVDI_40_VMWARE_DEV\APITest\TestService\obj\Debug\TestService.exe
+D:\NCC4.0\NCCVDI_40_VMWARE_DEV\APITest\TestService\obj\Debug\TestService.pdb
+D:\NCC4.0\NCCVDI_40_VMWARE_DEV\APITest\TestService\obj\Debug\TestService.csprojAssemblyReference.cache

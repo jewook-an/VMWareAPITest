@@ -1,0 +1,175 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30011.22
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Service", "Service", "{5D3A9A3E-61D2-4EEF-BF74-71EC976E0851}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test", "Test", "{D3862249-FBE4-4F8B-9603-B1ADB97FC713}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestVmWareAPI", "TestVmWareAPI\TestVmWareAPI.csproj", "{47E0EFE8-32F5-4211-802E-C48B79E58A21}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "vmwareapi", "vmwareapi\vmwareapi.csproj", "{4FE0BCA9-2DBE-4E4A-97EA-F2F046A48FA6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NCCWorkFlow", "..\..\NCCVDI_40_SAMSUNGCCMS_1\NCCWorkflow\NCCWorkFlow.csproj", "{6B99F2B3-9376-4089-B460-8C7B006A744B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NCCFramework2", "..\..\NCCVDI_40_SAMSUNGCCMS_1\NCCFramework2\NCCFramework2.csproj", "{D7BE13FF-B407-402E-ADC1-4620CF661E35}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VMProvisioningTest", "VMProvisioningTest\VMProvisioningTest.csproj", "{B50B3CC3-EA71-4416-8F66-4C763049B1FB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestService", "TestService\TestService.csproj", "{E1353898-6CFB-4599-9A15-B4BA560D46E4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x86 = Release|x86
+		StoreFrontService_Release|Any CPU = StoreFrontService_Release|Any CPU
+		StoreFrontService_Release|x86 = StoreFrontService_Release|x86
+		StoreFrontService|Any CPU = StoreFrontService|Any CPU
+		StoreFrontService|x86 = StoreFrontService|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{47E0EFE8-32F5-4211-802E-C48B79E58A21}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{47E0EFE8-32F5-4211-802E-C48B79E58A21}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{47E0EFE8-32F5-4211-802E-C48B79E58A21}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{47E0EFE8-32F5-4211-802E-C48B79E58A21}.Debug|x86.Build.0 = Debug|Any CPU
+		{47E0EFE8-32F5-4211-802E-C48B79E58A21}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{47E0EFE8-32F5-4211-802E-C48B79E58A21}.Release|Any CPU.Build.0 = Release|Any CPU
+		{47E0EFE8-32F5-4211-802E-C48B79E58A21}.Release|x86.ActiveCfg = Release|Any CPU
+		{47E0EFE8-32F5-4211-802E-C48B79E58A21}.Release|x86.Build.0 = Release|Any CPU
+		{47E0EFE8-32F5-4211-802E-C48B79E58A21}.StoreFrontService_Release|Any CPU.ActiveCfg = Release|Any CPU
+		{47E0EFE8-32F5-4211-802E-C48B79E58A21}.StoreFrontService_Release|Any CPU.Build.0 = Release|Any CPU
+		{47E0EFE8-32F5-4211-802E-C48B79E58A21}.StoreFrontService_Release|x86.ActiveCfg = Release|Any CPU
+		{47E0EFE8-32F5-4211-802E-C48B79E58A21}.StoreFrontService_Release|x86.Build.0 = Release|Any CPU
+		{47E0EFE8-32F5-4211-802E-C48B79E58A21}.StoreFrontService|Any CPU.ActiveCfg = Release|Any CPU
+		{47E0EFE8-32F5-4211-802E-C48B79E58A21}.StoreFrontService|Any CPU.Build.0 = Release|Any CPU
+		{47E0EFE8-32F5-4211-802E-C48B79E58A21}.StoreFrontService|x86.ActiveCfg = Release|Any CPU
+		{47E0EFE8-32F5-4211-802E-C48B79E58A21}.StoreFrontService|x86.Build.0 = Release|Any CPU
+		{4FE0BCA9-2DBE-4E4A-97EA-F2F046A48FA6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4FE0BCA9-2DBE-4E4A-97EA-F2F046A48FA6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4FE0BCA9-2DBE-4E4A-97EA-F2F046A48FA6}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{4FE0BCA9-2DBE-4E4A-97EA-F2F046A48FA6}.Debug|x86.Build.0 = Debug|Any CPU
+		{4FE0BCA9-2DBE-4E4A-97EA-F2F046A48FA6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4FE0BCA9-2DBE-4E4A-97EA-F2F046A48FA6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4FE0BCA9-2DBE-4E4A-97EA-F2F046A48FA6}.Release|x86.ActiveCfg = Release|Any CPU
+		{4FE0BCA9-2DBE-4E4A-97EA-F2F046A48FA6}.Release|x86.Build.0 = Release|Any CPU
+		{4FE0BCA9-2DBE-4E4A-97EA-F2F046A48FA6}.StoreFrontService_Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4FE0BCA9-2DBE-4E4A-97EA-F2F046A48FA6}.StoreFrontService_Release|Any CPU.Build.0 = Release|Any CPU
+		{4FE0BCA9-2DBE-4E4A-97EA-F2F046A48FA6}.StoreFrontService_Release|x86.ActiveCfg = Release|Any CPU
+		{4FE0BCA9-2DBE-4E4A-97EA-F2F046A48FA6}.StoreFrontService_Release|x86.Build.0 = Release|Any CPU
+		{4FE0BCA9-2DBE-4E4A-97EA-F2F046A48FA6}.StoreFrontService|Any CPU.ActiveCfg = Release|Any CPU
+		{4FE0BCA9-2DBE-4E4A-97EA-F2F046A48FA6}.StoreFrontService|Any CPU.Build.0 = Release|Any CPU
+		{4FE0BCA9-2DBE-4E4A-97EA-F2F046A48FA6}.StoreFrontService|x86.ActiveCfg = Release|Any CPU
+		{4FE0BCA9-2DBE-4E4A-97EA-F2F046A48FA6}.StoreFrontService|x86.Build.0 = Release|Any CPU
+		{6B99F2B3-9376-4089-B460-8C7B006A744B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6B99F2B3-9376-4089-B460-8C7B006A744B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6B99F2B3-9376-4089-B460-8C7B006A744B}.Debug|x86.ActiveCfg = Debug|x86
+		{6B99F2B3-9376-4089-B460-8C7B006A744B}.Debug|x86.Build.0 = Debug|x86
+		{6B99F2B3-9376-4089-B460-8C7B006A744B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6B99F2B3-9376-4089-B460-8C7B006A744B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6B99F2B3-9376-4089-B460-8C7B006A744B}.Release|x86.ActiveCfg = Release|x86
+		{6B99F2B3-9376-4089-B460-8C7B006A744B}.Release|x86.Build.0 = Release|x86
+		{6B99F2B3-9376-4089-B460-8C7B006A744B}.StoreFrontService_Release|Any CPU.ActiveCfg = StoreFrontService_Release|Any CPU
+		{6B99F2B3-9376-4089-B460-8C7B006A744B}.StoreFrontService_Release|Any CPU.Build.0 = StoreFrontService_Release|Any CPU
+		{6B99F2B3-9376-4089-B460-8C7B006A744B}.StoreFrontService_Release|x86.ActiveCfg = StoreFrontService_Release|x86
+		{6B99F2B3-9376-4089-B460-8C7B006A744B}.StoreFrontService_Release|x86.Build.0 = StoreFrontService_Release|x86
+		{6B99F2B3-9376-4089-B460-8C7B006A744B}.StoreFrontService|Any CPU.ActiveCfg = StoreFrontService|Any CPU
+		{6B99F2B3-9376-4089-B460-8C7B006A744B}.StoreFrontService|Any CPU.Build.0 = StoreFrontService|Any CPU
+		{6B99F2B3-9376-4089-B460-8C7B006A744B}.StoreFrontService|x86.ActiveCfg = StoreFrontService|x86
+		{6B99F2B3-9376-4089-B460-8C7B006A744B}.StoreFrontService|x86.Build.0 = StoreFrontService|x86
+		{D7BE13FF-B407-402E-ADC1-4620CF661E35}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D7BE13FF-B407-402E-ADC1-4620CF661E35}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D7BE13FF-B407-402E-ADC1-4620CF661E35}.Debug|x86.ActiveCfg = Debug|x86
+		{D7BE13FF-B407-402E-ADC1-4620CF661E35}.Debug|x86.Build.0 = Debug|x86
+		{D7BE13FF-B407-402E-ADC1-4620CF661E35}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D7BE13FF-B407-402E-ADC1-4620CF661E35}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D7BE13FF-B407-402E-ADC1-4620CF661E35}.Release|x86.ActiveCfg = Release|x86
+		{D7BE13FF-B407-402E-ADC1-4620CF661E35}.Release|x86.Build.0 = Release|x86
+		{D7BE13FF-B407-402E-ADC1-4620CF661E35}.StoreFrontService_Release|Any CPU.ActiveCfg = StoreFrontService_Release|Any CPU
+		{D7BE13FF-B407-402E-ADC1-4620CF661E35}.StoreFrontService_Release|Any CPU.Build.0 = StoreFrontService_Release|Any CPU
+		{D7BE13FF-B407-402E-ADC1-4620CF661E35}.StoreFrontService_Release|x86.ActiveCfg = StoreFrontService_Release|x86
+		{D7BE13FF-B407-402E-ADC1-4620CF661E35}.StoreFrontService_Release|x86.Build.0 = StoreFrontService_Release|x86
+		{D7BE13FF-B407-402E-ADC1-4620CF661E35}.StoreFrontService|Any CPU.ActiveCfg = StoreFrontService|Any CPU
+		{D7BE13FF-B407-402E-ADC1-4620CF661E35}.StoreFrontService|Any CPU.Build.0 = StoreFrontService|Any CPU
+		{D7BE13FF-B407-402E-ADC1-4620CF661E35}.StoreFrontService|x86.ActiveCfg = StoreFrontService|x86
+		{D7BE13FF-B407-402E-ADC1-4620CF661E35}.StoreFrontService|x86.Build.0 = StoreFrontService|x86
+		{B50B3CC3-EA71-4416-8F66-4C763049B1FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B50B3CC3-EA71-4416-8F66-4C763049B1FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B50B3CC3-EA71-4416-8F66-4C763049B1FB}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{B50B3CC3-EA71-4416-8F66-4C763049B1FB}.Debug|x86.Build.0 = Debug|Any CPU
+		{B50B3CC3-EA71-4416-8F66-4C763049B1FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B50B3CC3-EA71-4416-8F66-4C763049B1FB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B50B3CC3-EA71-4416-8F66-4C763049B1FB}.Release|x86.ActiveCfg = Release|Any CPU
+		{B50B3CC3-EA71-4416-8F66-4C763049B1FB}.Release|x86.Build.0 = Release|Any CPU
+		{B50B3CC3-EA71-4416-8F66-4C763049B1FB}.StoreFrontService_Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B50B3CC3-EA71-4416-8F66-4C763049B1FB}.StoreFrontService_Release|Any CPU.Build.0 = Release|Any CPU
+		{B50B3CC3-EA71-4416-8F66-4C763049B1FB}.StoreFrontService_Release|x86.ActiveCfg = Release|Any CPU
+		{B50B3CC3-EA71-4416-8F66-4C763049B1FB}.StoreFrontService_Release|x86.Build.0 = Release|Any CPU
+		{B50B3CC3-EA71-4416-8F66-4C763049B1FB}.StoreFrontService|Any CPU.ActiveCfg = Release|Any CPU
+		{B50B3CC3-EA71-4416-8F66-4C763049B1FB}.StoreFrontService|Any CPU.Build.0 = Release|Any CPU
+		{B50B3CC3-EA71-4416-8F66-4C763049B1FB}.StoreFrontService|x86.ActiveCfg = Release|Any CPU
+		{B50B3CC3-EA71-4416-8F66-4C763049B1FB}.StoreFrontService|x86.Build.0 = Release|Any CPU
+		{E1353898-6CFB-4599-9A15-B4BA560D46E4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E1353898-6CFB-4599-9A15-B4BA560D46E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E1353898-6CFB-4599-9A15-B4BA560D46E4}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{E1353898-6CFB-4599-9A15-B4BA560D46E4}.Debug|x86.Build.0 = Debug|Any CPU
+		{E1353898-6CFB-4599-9A15-B4BA560D46E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E1353898-6CFB-4599-9A15-B4BA560D46E4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E1353898-6CFB-4599-9A15-B4BA560D46E4}.Release|x86.ActiveCfg = Release|Any CPU
+		{E1353898-6CFB-4599-9A15-B4BA560D46E4}.Release|x86.Build.0 = Release|Any CPU
+		{E1353898-6CFB-4599-9A15-B4BA560D46E4}.StoreFrontService_Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E1353898-6CFB-4599-9A15-B4BA560D46E4}.StoreFrontService_Release|Any CPU.Build.0 = Release|Any CPU
+		{E1353898-6CFB-4599-9A15-B4BA560D46E4}.StoreFrontService_Release|x86.ActiveCfg = Release|Any CPU
+		{E1353898-6CFB-4599-9A15-B4BA560D46E4}.StoreFrontService_Release|x86.Build.0 = Release|Any CPU
+		{E1353898-6CFB-4599-9A15-B4BA560D46E4}.StoreFrontService|Any CPU.ActiveCfg = Release|Any CPU
+		{E1353898-6CFB-4599-9A15-B4BA560D46E4}.StoreFrontService|Any CPU.Build.0 = Release|Any CPU
+		{E1353898-6CFB-4599-9A15-B4BA560D46E4}.StoreFrontService|x86.ActiveCfg = Release|Any CPU
+		{E1353898-6CFB-4599-9A15-B4BA560D46E4}.StoreFrontService|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{47E0EFE8-32F5-4211-802E-C48B79E58A21} = {D3862249-FBE4-4F8B-9603-B1ADB97FC713}
+		{4FE0BCA9-2DBE-4E4A-97EA-F2F046A48FA6} = {5D3A9A3E-61D2-4EEF-BF74-71EC976E0851}
+		{6B99F2B3-9376-4089-B460-8C7B006A744B} = {5D3A9A3E-61D2-4EEF-BF74-71EC976E0851}
+		{D7BE13FF-B407-402E-ADC1-4620CF661E35} = {5D3A9A3E-61D2-4EEF-BF74-71EC976E0851}
+		{B50B3CC3-EA71-4416-8F66-4C763049B1FB} = {D3862249-FBE4-4F8B-9603-B1ADB97FC713}
+		{E1353898-6CFB-4599-9A15-B4BA560D46E4} = {D3862249-FBE4-4F8B-9603-B1ADB97FC713}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {078FBBBC-3EDB-46DC-8722-35941750CE2E}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 7
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://192.168.50.13:8080/tfs/nccvdi%204.0
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = TestVmWareAPI\\TestVmWareAPI.csproj
+		SccProjectTopLevelParentUniqueName1 = vmware.sln
+		SccProjectName1 = TestVmWareAPI
+		SccLocalPath1 = TestVmWareAPI
+		SccProjectUniqueName2 = vmwareapi\\vmwareapi.csproj
+		SccProjectTopLevelParentUniqueName2 = vmware.sln
+		SccProjectName2 = vmwareapi
+		SccLocalPath2 = vmwareapi
+		SccProjectUniqueName3 = ..\\..\\NCCVDI_40_SAMSUNGCCMS_1\\NCCWorkflow\\NCCWorkFlow.csproj
+		SccProjectTopLevelParentUniqueName3 = vmware.sln
+		SccProjectName3 = ../../NCCVDI_40_SAMSUNGCCMS_1/NCCWorkflow
+		SccLocalPath3 = ..\\..\\NCCVDI_40_SAMSUNGCCMS_1\\NCCWorkflow
+		SccProjectUniqueName4 = ..\\..\\NCCVDI_40_SAMSUNGCCMS_1\\NCCFramework2\\NCCFramework2.csproj
+		SccProjectTopLevelParentUniqueName4 = vmware.sln
+		SccProjectName4 = ../../NCCVDI_40_SAMSUNGCCMS_1/NCCFramework2
+		SccLocalPath4 = ..\\..\\NCCVDI_40_SAMSUNGCCMS_1\\NCCFramework2
+		SccProjectUniqueName5 = VMProvisioningTest\\VMProvisioningTest.csproj
+		SccProjectTopLevelParentUniqueName5 = vmware.sln
+		SccProjectName5 = VMProvisioningTest
+		SccLocalPath5 = VMProvisioningTest
+		SccProjectUniqueName6 = TestService\\TestService.csproj
+		SccProjectTopLevelParentUniqueName6 = vmware.sln
+		SccProjectName6 = TestService
+		SccLocalPath6 = TestService
+	EndGlobalSection
+EndGlobal

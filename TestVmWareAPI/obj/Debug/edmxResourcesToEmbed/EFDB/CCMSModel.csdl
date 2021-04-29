@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="CCMSModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="TB_HORIZON_VIEW">
+    <Key>
+      <PropertyRef Name="HORIZON_UUID" />
+    </Key>
+    <Property Name="HORIZON_UUID" Type="String" MaxLength="36" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="HORIZON_NAME" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="HORIZON_NAME_EN" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="HORIZON_URL" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="HORIZON_IP" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="HORIZON_PORT" Type="Int16" />
+    <Property Name="DESCRIPTION" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="ADMIN_ID" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="ADMIN_PW" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="NCC_SERVICE_IP" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="NCC_SERVICE_PORT" Type="Int16" Nullable="false" />
+    <Property Name="REG_ADMIN_ID" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="REG_DATETIME" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="UPDATE_ADMIN_ID" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="UPDATE_DATETIME" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="DEL_YN" Type="Boolean" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TB_VCENTER">
+    <Key>
+      <PropertyRef Name="VCENTER_UUID" />
+    </Key>
+    <Property Name="VCENTER_UUID" Type="String" MaxLength="36" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="VCENTER_NAME" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="VCENTER_NAME_EN" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="VCENTER_URL" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="VCENTER_IP" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="VCENTER_PORT" Type="Int16" />
+    <Property Name="DESCRIPTION" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="ADMIN_ID" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="ADMIN_PW" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="NCC_SERVICE_IP" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="NCC_SERVICE_PORT" Type="Int16" Nullable="false" />
+    <Property Name="REG_ADMIN_ID" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="REG_DATETIME" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="UPDATE_ADMIN_ID" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="UPDATE_DATETIME" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="DEL_YN" Type="Boolean" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="DBEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="TB_HORIZON_VIEW" EntityType="Self.TB_HORIZON_VIEW" />
+    <EntitySet Name="TB_VCENTER" EntityType="Self.TB_VCENTER" />
+  </EntityContainer>
+</Schema>

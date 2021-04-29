@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="CCMSModelStoreContainer" CdmEntityContainer="DBEntities">
+    <EntitySetMapping Name="TB_HORIZON_VIEW">
+      <EntityTypeMapping TypeName="CCMSModel.TB_HORIZON_VIEW">
+        <MappingFragment StoreEntitySet="TB_HORIZON_VIEW">
+          <ScalarProperty Name="HORIZON_UUID" ColumnName="HORIZON_UUID" />
+          <ScalarProperty Name="HORIZON_NAME" ColumnName="HORIZON_NAME" />
+          <ScalarProperty Name="HORIZON_NAME_EN" ColumnName="HORIZON_NAME_EN" />
+          <ScalarProperty Name="HORIZON_URL" ColumnName="HORIZON_URL" />
+          <ScalarProperty Name="HORIZON_IP" ColumnName="HORIZON_IP" />
+          <ScalarProperty Name="HORIZON_PORT" ColumnName="HORIZON_PORT" />
+          <ScalarProperty Name="DESCRIPTION" ColumnName="DESCRIPTION" />
+          <ScalarProperty Name="ADMIN_ID" ColumnName="ADMIN_ID" />
+          <ScalarProperty Name="ADMIN_PW" ColumnName="ADMIN_PW" />
+          <ScalarProperty Name="NCC_SERVICE_IP" ColumnName="NCC_SERVICE_IP" />
+          <ScalarProperty Name="NCC_SERVICE_PORT" ColumnName="NCC_SERVICE_PORT" />
+          <ScalarProperty Name="REG_ADMIN_ID" ColumnName="REG_ADMIN_ID" />
+          <ScalarProperty Name="REG_DATETIME" ColumnName="REG_DATETIME" />
+          <ScalarProperty Name="UPDATE_ADMIN_ID" ColumnName="UPDATE_ADMIN_ID" />
+          <ScalarProperty Name="UPDATE_DATETIME" ColumnName="UPDATE_DATETIME" />
+          <ScalarProperty Name="DEL_YN" ColumnName="DEL_YN" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TB_VCENTER">
+      <EntityTypeMapping TypeName="CCMSModel.TB_VCENTER">
+        <MappingFragment StoreEntitySet="TB_VCENTER">
+          <ScalarProperty Name="VCENTER_UUID" ColumnName="VCENTER_UUID" />
+          <ScalarProperty Name="VCENTER_NAME" ColumnName="VCENTER_NAME" />
+          <ScalarProperty Name="VCENTER_NAME_EN" ColumnName="VCENTER_NAME_EN" />
+          <ScalarProperty Name="VCENTER_URL" ColumnName="VCENTER_URL" />
+          <ScalarProperty Name="VCENTER_IP" ColumnName="VCENTER_IP" />
+          <ScalarProperty Name="VCENTER_PORT" ColumnName="VCENTER_PORT" />
+          <ScalarProperty Name="DESCRIPTION" ColumnName="DESCRIPTION" />
+          <ScalarProperty Name="ADMIN_ID" ColumnName="ADMIN_ID" />
+          <ScalarProperty Name="ADMIN_PW" ColumnName="ADMIN_PW" />
+          <ScalarProperty Name="NCC_SERVICE_IP" ColumnName="NCC_SERVICE_IP" />
+          <ScalarProperty Name="NCC_SERVICE_PORT" ColumnName="NCC_SERVICE_PORT" />
+          <ScalarProperty Name="REG_ADMIN_ID" ColumnName="REG_ADMIN_ID" />
+          <ScalarProperty Name="REG_DATETIME" ColumnName="REG_DATETIME" />
+          <ScalarProperty Name="UPDATE_ADMIN_ID" ColumnName="UPDATE_ADMIN_ID" />
+          <ScalarProperty Name="UPDATE_DATETIME" ColumnName="UPDATE_DATETIME" />
+          <ScalarProperty Name="DEL_YN" ColumnName="DEL_YN" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

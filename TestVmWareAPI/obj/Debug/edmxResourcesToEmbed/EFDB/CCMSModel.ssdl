@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="CCMSModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="TB_HORIZON_VIEW">
+    <Key>
+      <PropertyRef Name="HORIZON_UUID" />
+    </Key>
+    <Property Name="HORIZON_UUID" Type="nvarchar" MaxLength="36" Nullable="false" />
+    <Property Name="HORIZON_NAME" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="HORIZON_NAME_EN" Type="nvarchar" MaxLength="100" />
+    <Property Name="HORIZON_URL" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="HORIZON_IP" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="HORIZON_PORT" Type="smallint" />
+    <Property Name="DESCRIPTION" Type="nvarchar" MaxLength="100" />
+    <Property Name="ADMIN_ID" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="ADMIN_PW" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="NCC_SERVICE_IP" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="NCC_SERVICE_PORT" Type="smallint" Nullable="false" />
+    <Property Name="REG_ADMIN_ID" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="REG_DATETIME" Type="datetime" Nullable="false" />
+    <Property Name="UPDATE_ADMIN_ID" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="UPDATE_DATETIME" Type="datetime" Nullable="false" />
+    <Property Name="DEL_YN" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TB_VCENTER">
+    <Key>
+      <PropertyRef Name="VCENTER_UUID" />
+    </Key>
+    <Property Name="VCENTER_UUID" Type="nvarchar" MaxLength="36" Nullable="false" />
+    <Property Name="VCENTER_NAME" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="VCENTER_NAME_EN" Type="nvarchar" MaxLength="100" />
+    <Property Name="VCENTER_URL" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="VCENTER_IP" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="VCENTER_PORT" Type="smallint" />
+    <Property Name="DESCRIPTION" Type="nvarchar" MaxLength="100" />
+    <Property Name="ADMIN_ID" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="ADMIN_PW" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="NCC_SERVICE_IP" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="NCC_SERVICE_PORT" Type="smallint" Nullable="false" />
+    <Property Name="REG_ADMIN_ID" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="REG_DATETIME" Type="datetime" Nullable="false" />
+    <Property Name="UPDATE_ADMIN_ID" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="UPDATE_DATETIME" Type="datetime" Nullable="false" />
+    <Property Name="DEL_YN" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="CCMSModelStoreContainer">
+    <EntitySet Name="TB_HORIZON_VIEW" EntityType="Self.TB_HORIZON_VIEW" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TB_VCENTER" EntityType="Self.TB_VCENTER" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

@@ -1,0 +1,178 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="CCMSModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="TB_HORIZON_VIEW">
+          <Key>
+            <PropertyRef Name="HORIZON_UUID" />
+          </Key>
+          <Property Name="HORIZON_UUID" Type="nvarchar" MaxLength="36" Nullable="false" />
+          <Property Name="HORIZON_NAME" Type="nvarchar" MaxLength="100" Nullable="false" />
+          <Property Name="HORIZON_NAME_EN" Type="nvarchar" MaxLength="100" />
+          <Property Name="HORIZON_URL" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="HORIZON_IP" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="HORIZON_PORT" Type="smallint" />
+          <Property Name="DESCRIPTION" Type="nvarchar" MaxLength="100" />
+          <Property Name="ADMIN_ID" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="ADMIN_PW" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="NCC_SERVICE_IP" Type="nvarchar" MaxLength="100" Nullable="false" />
+          <Property Name="NCC_SERVICE_PORT" Type="smallint" Nullable="false" />
+          <Property Name="REG_ADMIN_ID" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="REG_DATETIME" Type="datetime" Nullable="false" />
+          <Property Name="UPDATE_ADMIN_ID" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="UPDATE_DATETIME" Type="datetime" Nullable="false" />
+          <Property Name="DEL_YN" Type="bit" Nullable="false" />
+        </EntityType>
+        <EntityType Name="TB_VCENTER">
+          <Key>
+            <PropertyRef Name="VCENTER_UUID" />
+          </Key>
+          <Property Name="VCENTER_UUID" Type="nvarchar" MaxLength="36" Nullable="false" />
+          <Property Name="VCENTER_NAME" Type="nvarchar" MaxLength="100" Nullable="false" />
+          <Property Name="VCENTER_NAME_EN" Type="nvarchar" MaxLength="100" />
+          <Property Name="VCENTER_URL" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="VCENTER_IP" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="VCENTER_PORT" Type="smallint" />
+          <Property Name="DESCRIPTION" Type="nvarchar" MaxLength="100" />
+          <Property Name="ADMIN_ID" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="ADMIN_PW" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="NCC_SERVICE_IP" Type="nvarchar" MaxLength="100" Nullable="false" />
+          <Property Name="NCC_SERVICE_PORT" Type="smallint" Nullable="false" />
+          <Property Name="REG_ADMIN_ID" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="REG_DATETIME" Type="datetime" Nullable="false" />
+          <Property Name="UPDATE_ADMIN_ID" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="UPDATE_DATETIME" Type="datetime" Nullable="false" />
+          <Property Name="DEL_YN" Type="bit" Nullable="false" />
+        </EntityType>
+        <EntityContainer Name="CCMSModelStoreContainer">
+          <EntitySet Name="TB_HORIZON_VIEW" EntityType="Self.TB_HORIZON_VIEW" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="TB_VCENTER" EntityType="Self.TB_VCENTER" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="CCMSModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="TB_HORIZON_VIEW">
+          <Key>
+            <PropertyRef Name="HORIZON_UUID" />
+          </Key>
+          <Property Name="HORIZON_UUID" Type="String" MaxLength="36" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="HORIZON_NAME" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="HORIZON_NAME_EN" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="HORIZON_URL" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="HORIZON_IP" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="HORIZON_PORT" Type="Int16" />
+          <Property Name="DESCRIPTION" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="ADMIN_ID" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="ADMIN_PW" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="NCC_SERVICE_IP" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="NCC_SERVICE_PORT" Type="Int16" Nullable="false" />
+          <Property Name="REG_ADMIN_ID" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="REG_DATETIME" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="UPDATE_ADMIN_ID" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="UPDATE_DATETIME" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="DEL_YN" Type="Boolean" Nullable="false" />
+        </EntityType>
+        <EntityType Name="TB_VCENTER">
+          <Key>
+            <PropertyRef Name="VCENTER_UUID" />
+          </Key>
+          <Property Name="VCENTER_UUID" Type="String" MaxLength="36" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="VCENTER_NAME" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="VCENTER_NAME_EN" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="VCENTER_URL" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="VCENTER_IP" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="VCENTER_PORT" Type="Int16" />
+          <Property Name="DESCRIPTION" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="ADMIN_ID" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="ADMIN_PW" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="NCC_SERVICE_IP" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="NCC_SERVICE_PORT" Type="Int16" Nullable="false" />
+          <Property Name="REG_ADMIN_ID" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="REG_DATETIME" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="UPDATE_ADMIN_ID" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="UPDATE_DATETIME" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="DEL_YN" Type="Boolean" Nullable="false" />
+        </EntityType>
+        <EntityContainer Name="DBEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="TB_HORIZON_VIEW" EntityType="Self.TB_HORIZON_VIEW" />
+          <EntitySet Name="TB_VCENTER" EntityType="Self.TB_VCENTER" />
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="CCMSModelStoreContainer" CdmEntityContainer="DBEntities">
+          <EntitySetMapping Name="TB_HORIZON_VIEW">
+            <EntityTypeMapping TypeName="CCMSModel.TB_HORIZON_VIEW">
+              <MappingFragment StoreEntitySet="TB_HORIZON_VIEW">
+                <ScalarProperty Name="HORIZON_UUID" ColumnName="HORIZON_UUID" />
+                <ScalarProperty Name="HORIZON_NAME" ColumnName="HORIZON_NAME" />
+                <ScalarProperty Name="HORIZON_NAME_EN" ColumnName="HORIZON_NAME_EN" />
+                <ScalarProperty Name="HORIZON_URL" ColumnName="HORIZON_URL" />
+                <ScalarProperty Name="HORIZON_IP" ColumnName="HORIZON_IP" />
+                <ScalarProperty Name="HORIZON_PORT" ColumnName="HORIZON_PORT" />
+                <ScalarProperty Name="DESCRIPTION" ColumnName="DESCRIPTION" />
+                <ScalarProperty Name="ADMIN_ID" ColumnName="ADMIN_ID" />
+                <ScalarProperty Name="ADMIN_PW" ColumnName="ADMIN_PW" />
+                <ScalarProperty Name="NCC_SERVICE_IP" ColumnName="NCC_SERVICE_IP" />
+                <ScalarProperty Name="NCC_SERVICE_PORT" ColumnName="NCC_SERVICE_PORT" />
+                <ScalarProperty Name="REG_ADMIN_ID" ColumnName="REG_ADMIN_ID" />
+                <ScalarProperty Name="REG_DATETIME" ColumnName="REG_DATETIME" />
+                <ScalarProperty Name="UPDATE_ADMIN_ID" ColumnName="UPDATE_ADMIN_ID" />
+                <ScalarProperty Name="UPDATE_DATETIME" ColumnName="UPDATE_DATETIME" />
+                <ScalarProperty Name="DEL_YN" ColumnName="DEL_YN" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TB_VCENTER">
+            <EntityTypeMapping TypeName="CCMSModel.TB_VCENTER">
+              <MappingFragment StoreEntitySet="TB_VCENTER">
+                <ScalarProperty Name="VCENTER_UUID" ColumnName="VCENTER_UUID" />
+                <ScalarProperty Name="VCENTER_NAME" ColumnName="VCENTER_NAME" />
+                <ScalarProperty Name="VCENTER_NAME_EN" ColumnName="VCENTER_NAME_EN" />
+                <ScalarProperty Name="VCENTER_URL" ColumnName="VCENTER_URL" />
+                <ScalarProperty Name="VCENTER_IP" ColumnName="VCENTER_IP" />
+                <ScalarProperty Name="VCENTER_PORT" ColumnName="VCENTER_PORT" />
+                <ScalarProperty Name="DESCRIPTION" ColumnName="DESCRIPTION" />
+                <ScalarProperty Name="ADMIN_ID" ColumnName="ADMIN_ID" />
+                <ScalarProperty Name="ADMIN_PW" ColumnName="ADMIN_PW" />
+                <ScalarProperty Name="NCC_SERVICE_IP" ColumnName="NCC_SERVICE_IP" />
+                <ScalarProperty Name="NCC_SERVICE_PORT" ColumnName="NCC_SERVICE_PORT" />
+                <ScalarProperty Name="REG_ADMIN_ID" ColumnName="REG_ADMIN_ID" />
+                <ScalarProperty Name="REG_DATETIME" ColumnName="REG_DATETIME" />
+                <ScalarProperty Name="UPDATE_ADMIN_ID" ColumnName="UPDATE_ADMIN_ID" />
+                <ScalarProperty Name="UPDATE_DATETIME" ColumnName="UPDATE_DATETIME" />
+                <ScalarProperty Name="DEL_YN" ColumnName="DEL_YN" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="없음" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

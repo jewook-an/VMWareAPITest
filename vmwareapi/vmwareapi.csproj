@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4FE0BCA9-2DBE-4E4A-97EA-F2F046A48FA6}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>vmwareapi</RootNamespace>
+    <AssemblyName>vmwareapi</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x64</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="log4net">
+      <HintPath>..\..\..\NCCVDI_40_SAMSUNGCCMS_1\packages\log4net.2.0.8\lib\net45-full\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Management.Automation, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\windows\Microsoft.NET\assembly\GAC_MSIL\System.Management.Automation\v4.0_3.0.0.0__31bf3856ad364e35\System.Management.Automation.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Util\PowerShell\CliException.cs" />
+    <Compile Include="Util\PowerShell\CliModule.cs" />
+    <Compile Include="Util\PowerShell\PowerCli.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="vmware\horizon\Connect.cs" />
+    <Compile Include="vmware\horizon\Model\AgentSettingModel.cs" />
+    <Compile Include="vmware\horizon\Model\AgentWorkFlowModel.cs" />
+    <Compile Include="vmware\horizon\Model\PoolModel.cs" />
+    <Compile Include="vmware\horizon\Model\ResultModel.cs" />
+    <Compile Include="vmware\horizon\Model\SummaryPoolModel.cs" />
+    <Compile Include="vmware\horizon\Model\ViewResult.cs" />
+    <Compile Include="vmware\horizon\Model\VMGuestFileModel.cs" />
+    <Compile Include="vmware\horizon\Pool\UserEntitlement.cs" />
+    <Compile Include="vmware\horizon\Provisioning\SystemSetting.cs" />
+    <Compile Include="vmware\horizon\Session.cs" />
+    <Compile Include="vmware\horizon\Pool\ViewPool.cs" />
+    <Compile Include="vmware\vcenter\Connect.cs" />
+    <Compile Include="vmware\vcenter\VM\DataDef\SetCopyVMGuestFile.cs" />
+    <Compile Include="vmware\vcenter\VM\DataDef\SetResourceChange.cs" />
+    <Compile Include="vmware\vcenter\VM\Model\InfraModel.cs" />
+    <Compile Include="vmware\vcenter\VM\VMManager.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\NCCVDI_40_SAMSUNGCCMS_1\NCCFramework2\NCCFramework2.csproj">
+      <Project>{d7be13ff-b407-402e-adc1-4620cf661e35}</Project>
+      <Name>NCCFramework2</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\NCCVDI_40_SAMSUNGCCMS_1\NCCWorkflow\NCCWorkFlow.csproj">
+      <Project>{6b99f2b3-9376-4089-b460-8c7b006a744b}</Project>
+      <Name>NCCWorkFlow</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
